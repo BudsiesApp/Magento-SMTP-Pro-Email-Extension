@@ -141,7 +141,7 @@ class Aschroder_SMTPPro_Model_Email_Queue extends Mage_Core_Model_Email_Queue {
                     }
 
                     Mage::setIsDeveloperMode($oldDevMode);
-
+                    
                     $message->setProcessedAt(Varien_Date::formatDate(true));
                     $message->save();
 
